@@ -9,7 +9,7 @@
 ;			./love
 
 section .data
-	text db "I love Ethical Hacking" ,20
+	text db "I love Ethical Hacking" ,10
 
 section .text
 	global _start
@@ -18,7 +18,7 @@ _start:
 	mov 	rax, 1
 	mov 	rdi, 1
 	mov	rsi, text
-	mov	rdx, 30
+	mov	rdx, 23
 	syscall
 	mov	rax, 60
 	xor	rdi, rdi
